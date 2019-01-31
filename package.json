@@ -1,0 +1,27 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "Gateway is a [Cortex Prime][cprime] RPG being played by a group of players in Southern California. The setting is an alt-history Seattle just after the 1900s where magic has recently reawakened, and is being used by both sides of a budding resistance against the totalitarian regime. The characters come from all sides the conflict.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TALlama/gateway.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TALlama/gateway/issues"
+  },
+  "homepage": "https://github.com/TALlama/gateway#readme",
+  "devDependencies": {
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}

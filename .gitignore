@@ -1,0 +1,13 @@
+*.cache
+*.DS_Store
+*.swp
+/tmp
+
+# Ruby
+/.env.local
+
+# JS
+/node_modules
+yarn-debug.log*
+yarn-error.log
+.yarn-integrity
