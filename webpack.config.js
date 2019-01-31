@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/main.js',
@@ -7,8 +8,12 @@ module.exports = {
     path: path.resolve(__dirname, 'docs')
   },
   devServer: {
-    contentBase: './docs'
+    contentBase: './docs',
+    hot: true
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module: {
      rules: [{
          test: /\.scss$/,
