@@ -6,6 +6,9 @@ module.exports = {
     filename: 'app.js',
     path: path.resolve(__dirname, 'docs')
   },
+  devServer: {
+    contentBase: './docs'
+  },
   module: {
      rules: [{
          test: /\.scss$/,
