@@ -1,0 +1,90 @@
+.character {
+  padding: var(--gap);
+  color: var(--text-color);
+  
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-gap: var(--gap);
+  grid-template-areas:
+    "head          head"
+    "values        xp"
+    "relationships distinctions"
+    "powersets     resources";
+  
+  &.callout {
+    --body-size: 12px;
+    font-size: var(--body-size);
+  }
+  
+  &:not(.callout) {
+    width: 8.5in;
+    height: 10.5in;
+  }
+  
+  page-break-inside: avoid;
+  
+  --val-width: 1.5rem;
+  --trait-width: 4rem;
+  
+  > header {
+    grid-area: head;
+    font-size: var(--header-size);
+    
+    > small {
+      font-family: 'Inknut Antiqua', serif;
+      font-size: var(--body-size);
+    }
+  }
+  
+  > img {
+    z-index: 1;
+    grid-column: head / head;
+    grid-row: head / powersets;
+    opacity: 0.3;
+    object-fit: cover;
+    width: calc(100% + var(--gap) * 2);
+    height: calc(100% + var(--gap) * 2);
+    object-fit: cover;
+    margin-left: calc(0px - var(--gap));
+    margin-top: calc(0px - var(--gap));
+  }
+  
+  #values {
+    grid-area: values;
+  }
+  #relationships {
+    grid-area: relationships;
+  }
+  #distinctions {
+    grid-area: distinctions;
+  }
+  #resources {
+    grid-area: resources;
+  }
+  #powersets {
+    grid-area: powersets;
+  }
+  #xp {
+    grid-area: xp;
+  }
+  
+  .xp {
+    display: grid;
+    grid-template-columns: [rating] var(--val-width) [trait] auto [fin];
+    grid-gap: var(--gap);
+    align-content: start;
+    align-items: baseline;
+    
+    dt {
+      text-align: right;
+      
+      &::after {
+        content: "xp";
+        color: var(--meta-color);
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 72%;
+        font-weight: 400;
+      }
+    }
+  }
+}

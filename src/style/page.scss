@@ -1,0 +1,100 @@
+html {
+  --gap: .5rem;
+  --border-color: hsl(137, 90%, 30%);
+  --bg-color: hsl(137, 97%, 23%);
+  --bg-opacity: 0.9;
+  --summary-color: hsl(137, 90%, 90%);
+}
+
+#app {
+  background-color: var(--bg-color);
+  background-image: url('../images/forest-at-olympic-national-park-washington.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  
+  display: grid;
+  grid-template-areas:
+    'head head'
+    'main callout'
+    'foot foot';
+  grid-template-columns: 40ch 1fr;
+}
+
+
+#app > header,
+#app > main > article,
+#app > .callout,
+#app > footer {
+  padding: var(--gap);
+  background-color: hsla(0, 0%, 100%, 1.0);
+}
+
+
+#app > header {
+  grid-area: head;
+  
+  padding-bottom: 0px;
+  margin-bottom: var(--gap);
+  background-color: hsla(0, 0%, 100%, var(--bg-opacity));
+  border-bottom: .1rem solid var(--border-color);
+  box-shadow: 0 0 5px hsla(0, 0%, 10%, 100%);
+  
+  h1 > small {
+    margin-left: var(--gap);
+  }
+  
+  nav ul {
+    display: flex;
+    
+    li {
+      flex-grow: 1;
+      display: flex;
+    }
+    
+    li a {
+      flex-grow: 1;
+      padding: calc(var(--gap) / 2) var(--gap);
+    }
+  }
+}
+
+#app > main > article,
+#app > .callout {
+  margin: 0 var(--gap) auto;
+  border: .1rem solid var(--border-color);
+  box-shadow: 0 0 5px hsla(0, 0%, 10%, 100%);
+}
+
+#app > .callout {
+  grid-area: callout;
+  
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+#app > main {
+  grid-area: main;
+  
+  > article + article {
+    margin-top: var(--gap);
+  }
+}
+
+#app > .callout {
+  grid-area: callout;
+  margin: 0 var(--gap) auto;
+  max-width: 800px;
+  border: .1rem solid var(--border-color);
+}
+
+#app > footer {
+  grid-area: foot;
+  margin-top: var(--gap);
+  border-top: .1rem solid var(--border-color);
+  
+  font-size: 80%;
+  opacity: var(--bg-opacity);
+}

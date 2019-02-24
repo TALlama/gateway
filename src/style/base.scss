@@ -1,0 +1,43 @@
+h1 { font-size: 180%; }
+h2 { font-size: 160%; }
+h3 { font-size: 140%; }
+h4 { font-size: 120%; }
+h5 { font-size: 110%; }
+h6 { font-size: 100%; }
+
+html {
+  --text-color: hsl(0, 0%, 10%);
+  --meta-color: hsl(0, 0%, 45%);
+  --accent-color: hsl(0, 0%, 60%);
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+p {
+  text-indent: 1em;
+}
+
+ul {
+  list-style: circle;
+  
+  li {
+    margin-left: 2em
+  }
+}
+
+abbr[title] {
+  text-decoration: underline;
+  -webkit-text-decoration-style: dashed;
+  text-decoration-style: dashed;
+}
+
+small {
+  font-size: 80%;
+}
+
+.hidden {
+  display: none !important;
+}

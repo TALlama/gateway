@@ -1,0 +1,32 @@
+.episode {
+  header {
+    .metadata {
+      font-size: 40%;
+      font-weight: 400;
+    }
+    
+    .metadata, dl.metadata > dt {
+      font-family: 'Inknut Antiqua', serif;
+    }
+    
+    dl.metadata {
+      margin: 0 calc(-1 * var(--gap));
+      padding: 0 var(--gap);
+      
+      border-top: .1rem solid var(--border-color);
+      border-bottom: .1rem solid var(--border-color);
+      
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      
+      dt, dd {
+        line-height: 2rem;
+      }
+      
+      dt {
+        text-align: right;
+        padding-right: var(--gap);
+      }
+    }
+  }
+}

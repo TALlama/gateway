@@ -1,0 +1,61 @@
+section dl + dl {
+  margin-top: var(--gap);
+}
+
+.traits dt,
+.traits dd.rating,
+.xp dt,
+.xp dd {
+  line-height: 21px;
+}
+
+.traits,
+.statement-traits {
+  display: grid;
+  grid-template-columns: [rating] var(--val-width) [trait] auto [fin];
+  grid-auto-flow: dense;
+  grid-gap: var(--gap);
+  align-content: start;
+  align-items: baseline;
+  
+  page-break-inside: avoid;
+
+  &.statement-traits {
+    grid-template-columns: [rating] var(--val-width) [trait] var(--trait-width) [stmt] auto [fin];
+  }
+  dt {
+    grid-column: 2;
+  }
+  dd {
+    display: flex;
+  }
+  .rating {
+    grid-column: 1;
+    text-align: right;
+  }
+    .rating::before {
+      content: "d";
+      color: var(--meta-color);
+    }
+  .statement {
+    grid-column: 3;
+  }
+  .sfx,
+  .limit {
+    grid-column: 1 / 3;
+  }
+  .sfx:not(.set),
+  .limit:not(.set) {
+    margin-left: 2.5em;
+  }
+  dt.set {
+    display: none;
+  }
+}
+
+.limit::before {
+  content: "⛔️";
+}
+.sfx::before {
+  content: "⚡️";
+}

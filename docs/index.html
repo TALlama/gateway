@@ -1,15 +1,76 @@
 <!doctype html>
 <html>
- <head>
-   <title></title>
- </head>
- <body>
-   <h1>Hi</h1>
-   <ol>
-     <li>One</li>
-     <li>Two</li>
-     <li>Three</li>
-   </ol>
-   <script src="app.js"></script>
- </body>
+  <head>
+    <title>Gateway: a Cortex Prime campaign</title>
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:300,700" rel="stylesheet">
+  </head>
+  <body>
+    <main id='app'>
+      <header>
+        <h1>Gateway<small>a Cortex Prime campaign</small></h1>
+        <nav>
+          <ul>
+            <li v-for='s in seasons'><a :href='"#" + s.id'>Season {{s.season}}</a></li>
+            <li><a href='#setting'>The Setting</a></li>
+            <li><a href='#actors'>The Actors</a></li>
+            <li><a href='#rules'>The Rules</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <cp-character
+        class='callout'
+        v-for='character in characters'
+        v-bind:character='character'
+        v-bind:focused='isCharacterFocused(character)'
+        ></cp-character>
+      
+      <main>
+        <cp-episode
+          v-for='episode in episodes.slice().reverse()'
+          v-bind:episode='episode'
+          v-bind:focused='isEpisodeFocused(episode)'
+          ></cp-episode>
+      
+        <article class='about' id='setting'>
+          <header>The Setting</header>
+          <p>Magic has always been here, deep in the world, hiding. The traditions stretch back millennia, but the otherworldly <em>anima</em> required to perform real magic have been dying out, and fewer magicians are born every year. A person paired with an <em>anima</em> is empowered to do one particular breed of magic. Although some claim Merlin had paired with a dozen <em>anima</em>, no one is sure they believe those stories: in living memory no one has ever had more than one.</p>
+         <p>But as the totalitarian government spread west, the set-upon tribes gathered. Their Ghost Dance tore open the ley lines of the world. The <em>anima</em>, suddenly free to cross once again from their reality into our own, returned in force, and magic came roaring back.</p>
+          <hr/>
+          <p>Seattle, 1902. A city still emerging from the frontier. The far-away government struggles to maintain their control, fighting the never-ending, low-simmering war against the tribes. The church calls to end the witchcraft that has taken root in the world. And a budding revolution swells from the Underground.</p>
+        </article>
+      
+        <article class='about' id='actors'>
+          <header>The Actors</header>
+          <ul>
+            <li v-for='character in characters'>
+              <a href='#' v-on:click.prevent='showCharacter(character)'>{{character.name}}, played by {{character.player}}</a>
+            </li>
+          </ul>
+        </article>
+      
+        <article class='rules' id='rules'>
+          <header>The Rules</header>
+          <p>This is a <a href='https://www.kickstarter.com/projects/530352392/cortex-prime-a-multi-genre-modular-roleplaying-gam'>Cortex Prime</a> game. We find that Cortex pushes the characters into interesting places and makes them develop a complex, fun story that's always evolving. Our <a href='http://calville.thestorysofar.link'>previous Cortex game</a> ran for years, and we only stopped that one because we burned out our <abbr title='read as "GM" or "DM" if you must'>Master of Ceremonies</abbr>. So this game is GMful, and using the following mods:</p>
+          <ul>
+            <li>Core traits are Values (with statements), Relationships (with statements), and Distinctions. We're ex-Smallville and it shows.</li>
+            <li>Additional traits are Powers (with power sets), Extras, and Locations.</li>
+            <li>We are using a Doom Pool, but are allowing ourselves to convert spoilers into Doom Pool dice or Complications as we feel is appropriate</li>
+            <li>We are using the Effect Die</li>
+            <li>Plot points carry over from session to session, but if you have fewer than 2 you get 2 to start</li>
+            <li>We used Pathways to do chargen, using a blend of the Cortex Prime rules and the Smallville rules, because we liked the more interesting connection drawing that was available in Smallville.</li>
+            <li>We are using Milestones for character advancement, with each character having their own 1xp/3xp/10xp goals, and with everyone having access to two "shared milestones" that encourage getting hurt and helping those who are hurt</li>
+            <li>Scene framing is performed by whoever is first to toss a Plot Point onto the table and call the next scene. If a scene ends and no one has claimed the next one, whoever frames the next scene gets a Plot Point instead.</li>
+            <li>If you frame a scene that you're not in, you have to spend an extra Plot Point</li>
+          </ul>
+        </article>
+      </main>
+      
+      <footer>
+        &copy; 2019 the players: Andrew Ardisone, David Burk, Seth Roby, Samantha Smith, Morgan Stites
+      </footer>
+    </main>
+     
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Harrington-Regular';
+  src:  url('fonts/Harrington-Regular.ttf.woff') format('woff'),
+    url('fonts/Harrington-Regular.ttf.svg#Harrington-Regular') format('svg'),
+    url('fonts/Harrington-Regular.ttf.eot'),
+    url('fonts/Harrington-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: var(--body-size);
+}
+header, dt {
+  font-family: 'Harrington-Regular', serif;
+  font-size: 120%;
+}
+
+html {
+  --header-size: 1.8rem;
+  --body-size: 14pt;
+}

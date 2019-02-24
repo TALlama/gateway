@@ -1,0 +1,13 @@
+[data-title]::before {
+  font-family: 'Harrington-Regular', serif;
+  grid-column: rating / fin;
+  content: attr(data-title);
+  background-image: linear-gradient(to right, var(--accent-color), hsla(0, 0%, 0%, 0%) 70%);
+  background-size: 100% 10%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: var(--meta-color);
+  padding: .3em;
+  font-weight: 800;
+  line-height: .6;
+}

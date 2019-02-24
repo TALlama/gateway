@@ -1,0 +1,24 @@
+main > article {
+  header {
+    font-size: var(--header-size);
+    font-weight: 600;
+  }
+  
+  > section.audio {
+    margin: var(--gap) 0 ;
+    display: flex;
+    
+    .icon {
+      font-size: 200%;
+      color: var(--border-color);
+      margin: var(--gap);
+    }
+  }
+  
+  > section.summary {
+    background-color: var(--summary-color);
+    margin: 0 calc(-1 * var(--gap));
+    padding: var(--gap);
+    border-bottom: .1rem solid var(--border-color);
+  }
+}
