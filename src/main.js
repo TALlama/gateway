@@ -354,7 +354,7 @@ var app = new Vue({
         title: 'Pilot',
         airdate: '2019-01-28',
         summary: 'A yote is missing, and everyone is on the hunt. Kord murdered to get it; Alyx is tracking the murderer. Victoria wants the technology; Mutt just wants a paycheck. And Josephine seems to be playing all sides.',
-        podcastUrl: 'audio/s1e1.m4a',
+        podcastUrl: 'https://github.com/TALlama/gateway/blob/master/docs/audio/s1e1.m4a?raw=true',
       },
       {
         id: 's1e2',
@@ -363,7 +363,7 @@ var app = new Vue({
         title: 'Train Job',
         airdate: '2019-02-04',
         summary: "Victoria has a contact coming in on the evening train, but she's not going to make it.",
-        podcastUrl: 'audio/s1e2.m4a',
+        podcastUrl: 'https://github.com/TALlama/gateway/blob/master/docs/audio/s1e2.m4a?raw=true',
       },
     ]
   },
