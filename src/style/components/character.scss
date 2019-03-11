@@ -11,6 +11,8 @@
     "relationships distinctions"
     "powersets     resources";
   
+  --content-z-index: 2;
+  
   &.callout {
     --body-size: 12px;
     font-size: var(--body-size);
@@ -31,7 +33,7 @@
     font-size: var(--header-size);
     
     > small {
-      font-family: 'Inknut Antiqua', serif;
+      font-family: var(--body-font), serif;
       font-size: var(--body-size);
     }
   }
@@ -47,6 +49,10 @@
     object-fit: cover;
     margin-left: calc(0px - var(--gap));
     margin-top: calc(0px - var(--gap));
+  }
+  
+  dl {
+    z-index: var(--content-z-index);
   }
   
   #values {
@@ -81,7 +87,7 @@
       &::after {
         content: "xp";
         color: var(--meta-color);
-        font-family: 'Inknut Antiqua', serif;
+        font-family: var(--body-font), serif;
         font-size: 72%;
         font-weight: 400;
       }

@@ -365,6 +365,15 @@ var app = new Vue({
         summary: "Victoria has a contact coming in on the evening train, but she's not going to make it.",
         podcastUrl: 'https://github.com/TALlama/gateway/blob/master/docs/audio/s1e2.m4a?raw=true',
       },
+      {
+        id: 's1e3',
+        season: 1,
+        episode: 3,
+        title: 'Silence Through the Rift',
+        airdate: '2019-03-04',
+        summary: "Monsters attacks Seattle, prompting various opportunities.",
+        podcastUrl: 'https://github.com/TALlama/gateway/blob/master/docs/audio/s1e3.m4a?raw=true',
+      },
     ]
   },
   computed: {

@@ -1,23 +1,21 @@
-@font-face {
-  font-family: 'Harrington-Regular';
-  src:  url('fonts/Harrington-Regular.ttf.woff') format('woff'),
-    url('fonts/Harrington-Regular.ttf.svg#Harrington-Regular') format('svg'),
-    url('fonts/Harrington-Regular.ttf.eot'),
-    url('fonts/Harrington-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
-  font-weight: normal;
-  font-style: normal;
-}
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One:400,700,400italic);
 
 body {
-  font-family: 'Inknut Antiqua', serif;
+  font-family: var(--body-font), serif;
   font-size: var(--body-size);
+  line-height: 1.7;
 }
+
 header, dt {
-  font-family: 'Harrington-Regular', serif;
+  font-family: var(--fancy-font), serif;
   font-size: 120%;
 }
 
 html {
   --header-size: 1.8rem;
-  --body-size: 14pt;
+  --body-size: 12pt;
+  
+  --fancy-font: 'Lobster';
+  --body-font: 'Poiret One';
 }

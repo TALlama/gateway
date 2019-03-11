@@ -6,7 +6,7 @@
     }
     
     .metadata, dl.metadata > dt {
-      font-family: 'Inknut Antiqua', serif;
+      font-family: var(--body-font), serif;
     }
     
     dl.metadata {
