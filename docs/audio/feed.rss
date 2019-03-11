@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>Gateway</title>
+    <link>http://gateway.thestorysofar.link/audio/raw.rss</link>
+    <language>en-us</language>
+    <copyright>© 2019 the players: Andrew Ardisone, David Burk, Seth A. Roby, Samantha Smith, Morgan Stites</copyright>
+    <itunes:subtitle>a Cortex Prime campaign</itunes:subtitle>
+    <itunes:author>Andrew Ardisone, David Burk, Seth A. Roby, Samantha Smith, Morgan Stites</itunes:author>
+    <itunes:summary>An actual play podcast of our Cortex Prime campaign using a homebrew setting</itunes:summary>
+    <description>An actual play podcast of our Cortex Prime campaign using a homebrew setting</description>
+    <itunes:owner>
+      <itunes:name>Seth A. Roby</itunes:name>
+      <itunes:email>tallama@mac.com</itunes:email>
+    </itunes:owner>
+    <!--itunes:image href="http://example.com/podcasts/everything/AllAboutEverything.jpg"/ -->
+
+    <item>
+      <title>s1e1 Pilot</title>
+      <itunes:author>Andrew Ardisone, David Burk, Seth A. Roby, Samantha Smith, Morgan Stites</itunes:author>
+      <itunes:title>Pilot</itunes:title>
+      <itunes:summary>A yote is missing, and everyone is on the hunt. Kord murdered to get it; Alyx is tracking the murderer. Victoria wants the technology; Mutt just wants a paycheck. And Josephine seems to be playing all sides.</itunes:summary>
+      <enclosure url="https://github.com/TALlama/gateway/blob/master/docs/audio/s1e1.m4a?raw=true" type="audio/m4a"/>
+      <guid>https://github.com/TALlama/gateway/blob/master/docs/audio/s1e1.m4a?raw=true</guid>
+      <pubDate>2019-01-28 12:00 PM</pubDate>
+      <itunes:duration>02:03:49</itunes:duration>
+    </item>
+
+    <item>
+      <title>s1e2 Train Job</title>
+      <itunes:author>Andrew Ardisone, David Burk, Seth A. Roby, Samantha Smith, Morgan Stites</itunes:author>
+      <itunes:title>Train Job</itunes:title>
+      <itunes:summary>Victoria has a contact coming in on the evening train, but she's not going to make it.</itunes:summary>
+      <enclosure url="https://github.com/TALlama/gateway/blob/master/docs/audio/s1e2.m4a?raw=true" type="audio/m4a"/>
+      <guid>https://github.com/TALlama/gateway/blob/master/docs/audio/s1e2.m4a?raw=true</guid>
+      <pubDate>2019-02-04 12:00 PM</pubDate>
+      <itunes:duration>02:40:28</itunes:duration>
+    </item>
+
+    <item>
+      <title>s1e3 Silence Through the Rift</title>
+      <itunes:author>Andrew Ardisone, David Burk, Seth A. Roby, Samantha Smith, Morgan Stites</itunes:author>
+      <itunes:title>Silence Through the Rift</itunes:title>
+      <itunes:summary>Monsters attacks Seattle, prompting various opportunities.</itunes:summary>
+      <enclosure url="https://github.com/TALlama/gateway/blob/master/docs/audio/s1e3.m4a?raw=true" type="audio/m4a"/>
+      <guid>https://github.com/TALlama/gateway/blob/master/docs/audio/s1e3.m4a?raw=true</guid>
+      <pubDate>2019-02-04 12:00 PM</pubDate>
+      <itunes:duration>02:28:18</itunes:duration>
+    </item>
+  </channel>
+</rss>
