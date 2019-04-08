@@ -374,6 +374,15 @@ var app = new Vue({
         summary: "Monsters attacks Seattle, prompting various opportunities.",
         podcastUrl: 'https://github.com/TALlama/gateway/blob/master/docs/audio/s1e3.m4a?raw=true',
       },
+      {
+        id: 's1e4',
+        season: 1,
+        episode: 4,
+        title: 'The Cardinal',
+        airdate: '2019-04-01',
+        summary: "Everyone gets in trouble at the Cathedral.",
+        podcastUrl: 'https://github.com/TALlama/gateway/blob/master/docs/audio/s1e4.m4a?raw=true',
+      },
     ]
   },
   computed: {

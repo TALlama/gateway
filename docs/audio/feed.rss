@@ -47,5 +47,16 @@
       <pubDate>2019-02-04 12:00 PM</pubDate>
       <itunes:duration>02:28:18</itunes:duration>
     </item>
+
+    <item>
+      <title>s1e4 The Cardinal</title>
+      <itunes:author>Andrew Ardisone, David Burk, Seth A. Roby, Samantha Smith, Morgan Stites</itunes:author>
+      <itunes:title>The Cardinal</itunes:title>
+      <itunes:summary>Everyone gets in trouble at the Cathedral.</itunes:summary>
+      <enclosure url="https://github.com/TALlama/gateway/blob/master/docs/audio/s1e4.m4a?raw=true" type="audio/m4a"/>
+      <guid>https://github.com/TALlama/gateway/blob/master/docs/audio/s1e4.m4a?raw=true</guid>
+      <pubDate>2019-04-01 12:00 PM</pubDate>
+      <itunes:duration>02:19:25</itunes:duration>
+    </item>
   </channel>
 </rss>
