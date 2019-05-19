@@ -14,7 +14,13 @@
       <span class='icon fas fa-podcast'></span>
       <span class='desc'>This episode is available as an <a :href='episode.podcastUrl'>audio recording</a>.</span>
     </section>
-    <article class='body' v-if='episode.body'>
+    <article class='body' v-if='episode.body || episode.highlights'>
+      <aside class='highlights' v-if='episode.highlights'>
+        <header>Highlights</header>
+        <ul>
+          <li v-for='h in episode.highlights'>{{h}}</li>
+        </ul>
+      </aside>
       {{episode.body}}
     </article>
   </article>

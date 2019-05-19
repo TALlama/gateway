@@ -58,5 +58,32 @@
       <pubDate>2019-04-01 12:00 PM</pubDate>
       <itunes:duration>02:19:25</itunes:duration>
     </item>
+
+    <item>
+      <title>s1e5 In Scientia Libertas</title>
+      <itunes:author>Andrew Ardisone, David Burk, Seth A. Roby, Samantha Smith, Morgan Stites</itunes:author>
+      <itunes:title>In Scientia Libertas</itunes:title>
+      <itunes:summary>The yote attracts more attention, from people we've seen before and some we haven't.</itunes:summary>
+      <!--
+        a threat at the seaside
+        a gunfight in the cemetery
+        the baddies get an airship
+        the morgue burns down
+        a sleepover at the safehouse
+        Kord is called downtown to get an ultimatum
+        Elizabeth gets rescued
+        Josephine and Kord plan for eventualities
+        tags:
+        - A prototype yote enters the picture
+        - Nike gets a report on the yotes
+        - Kord and Alyx talk yotes
+        - Alyx asks Mutt, who don't know nothin' 'bout yotes
+        - The other Elizabeth gets rescued
+      -->
+      <enclosure url="https://github.com/TALlama/gateway/blob/master/docs/audio/s1e5.m4a?raw=true" type="audio/m4a"/>
+      <guid>https://github.com/TALlama/gateway/blob/master/docs/audio/s1e5.m4a?raw=true</guid>
+      <pubDate>2019-04-29 12:00 PM</pubDate>
+      <itunes:duration>02:32:09</itunes:duration>
+    </item>
   </channel>
 </rss>

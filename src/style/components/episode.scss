@@ -1,5 +1,5 @@
 .episode {
-  header {
+  > header {
     .metadata {
       font-size: 40%;
       font-weight: 400;
@@ -27,6 +27,12 @@
         text-align: right;
         padding-right: var(--gap);
       }
+    }
+  }
+  
+  .highlights {
+    header {
+      font-size: 100%;
     }
   }
 }

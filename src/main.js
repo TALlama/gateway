@@ -383,6 +383,30 @@ var app = new Vue({
         summary: "Everyone gets in trouble at the Cathedral.",
         podcastUrl: 'https://github.com/TALlama/gateway/blob/master/docs/audio/s1e4.m4a?raw=true',
       },
+      {
+        id: 's1e5',
+        season: 1,
+        episode: 5,
+        title: 'In Scientia Libertas',
+        airdate: '2019-04-29',
+        summary: "The yote attracts more attention, from people we've seen before and some we haven't.",
+        podcastUrl: 'https://github.com/TALlama/gateway/blob/master/docs/audio/s1e5.m4a?raw=true',
+        highlights: [
+          "Alyx is threatened at the seaside",
+          "Mutt has a gunfight in the cemetery",
+          "The baddies get an airship",
+          "The morgue burns down",
+          "A sleepover at the safehouse",
+          "Kord is called downtown to get an ultimatum",
+          "Elizabeth gets rescued",
+          "Josephine and Kord plan for eventualities",
+          "[tag] A prototype yote enters the picture",
+          "[tag] Nike gets a report on the yotes",
+          "[tag] Kord and Alyx talk yotes",
+          "[tag] Alyx asks Mutt, who don't know nothin' 'bout yotes",
+          "[tag] The other Elizabeth gets rescued",
+        ]
+      },
     ]
   },
   computed: {
